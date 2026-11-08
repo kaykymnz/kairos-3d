@@ -219,3 +219,5 @@
   .production{text-align:left}
   .detail-price>div>strong{font-size:30px}
 }
+ .brand-logo{display:block;width:72px;height:61px;object-fit:contain;mix-blend-mode:multiply}
+ @media(min-width:1024px){.brand-logo{width:88px;height:76px}}
