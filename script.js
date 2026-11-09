@@ -40,7 +40,7 @@ function updateCart(){
   document.querySelector("#cartTotal").textContent = money(total);
   const message = entries.map(([id,qty])=>`${qty}x ${products[id].name} — ${money(products[id].price*qty)}`).join("\n");
   const checkout = document.querySelector("#checkoutLink");
-  checkout.href = `https://wa.me/5500000000000?text=${encodeURIComponent("Olá! Quero finalizar meu pedido:\n"+message+"\nTotal: "+money(total))}`;
+  checkout.href = `https://wa.me/5511959990386?text=${encodeURIComponent("Olá! Quero finalizar meu pedido:\n"+message+"\nTotal: "+money(total))}`;
 }
 function openCart(){
   cartDrawer.classList.add("open");backdrop.classList.add("open");
@@ -107,7 +107,7 @@ function route(){
     document.querySelector(".detail-copy .product-meta").textContent = product.category;
     document.querySelector(".detail-image .tag").textContent = id==="dragao" ? "LOOT DA SEMANA" : "PEÇA DO DROP";
     document.querySelector(".detail-drop").textContent = id==="dragao" ? "DROP / 007" : "LAYER / LAB";
-    document.querySelector("#whatsappLink").href = `https://wa.me/5500000000000?text=${encodeURIComponent("Olá! Tenho interesse na peça "+product.name+".")}`;
+    document.querySelector("#whatsappLink").href = `https://wa.me/5511959990386?text=${encodeURIComponent("Olá! Tenho interesse na peça "+product.name+".")}`;
   }
   window.scrollTo(0,0);
 }
