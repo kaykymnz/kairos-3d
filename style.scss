@@ -1771,6 +1771,27 @@ $swatch-palettes: (
     }
   }
 
+  .featured-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &.is-resetting {
+      scroll-behavior: auto;
+    }
+
+    .featured {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+    }
+  }
+
   .detail-price {
     align-items: flex-start;
     flex-direction: column;
